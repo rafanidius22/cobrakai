@@ -1,0 +1,2068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>899</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(115, 115, 115);</string>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>180</y>
+      <width>1441</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>1441</width>
+        <height>711</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="Layout">
+       <item>
+        <layout class="QVBoxLayout" name="Controles">
+         <item>
+          <widget class="QPushButton" name="Botao_Cadastro">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+           </property>
+           <property name="text">
+            <string>Cadastrar novo aluno</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Botao_Editar">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+           </property>
+           <property name="text">
+            <string>Ver e editar cadastros</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Botao_Relacao">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);
+</string>
+           </property>
+           <property name="text">
+            <string>Relação de pagamento</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Botao_Sair">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+           </property>
+           <property name="text">
+            <string>Sair</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="Layout_Right">
+         <item>
+          <widget class="QLabel" name="List_Entrada_Text">
+           <property name="styleSheet">
+            <string notr="true">font: 87 24pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+           </property>
+           <property name="text">
+            <string>Registro de entrada</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="List_Entrada_Text_2">
+           <property name="styleSheet">
+            <string notr="true">font: 87 24pt &quot;Arial&quot;;
+background-color: rgb(216, 216, 0);</string>
+           </property>
+           <property name="text">
+            <string>Login    Nome                         Status                                            Data/horário</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollArea_2">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1215</width>
+              <height>612</height>
+             </rect>
+            </property>
+            <widget class="QListWidget" name="listEntrada">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>1217</width>
+               <height>721</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+font: 20pt &quot;Arial&quot;;</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <property name="minimumSize">
+      <size>
+       <width>212</width>
+       <height>31</height>
+      </size>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>14</y>
+        <width>1411</width>
+        <height>822</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="Layout_2">
+       <item>
+        <layout class="QVBoxLayout" name="Layout_Left_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetNoConstraint</enum>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>40</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="Procurar">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetFixedSize</enum>
+           </property>
+           <property name="topMargin">
+            <number>100</number>
+           </property>
+           <property name="bottomMargin">
+            <number>100</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+             </property>
+             <property name="text">
+              <string>Digite:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_Procurar">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Arial&quot;;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Botao_Procurar">
+             <property name="styleSheet">
+              <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+             </property>
+             <property name="text">
+              <string>Procurar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="Controles_2">
+           <property name="spacing">
+            <number>100</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetFixedSize</enum>
+           </property>
+           <property name="bottomMargin">
+            <number>150</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="Botao_Cadastro_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+             </property>
+             <property name="text">
+              <string>Cadastrar novo aluno</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Botao_Relacao_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);
+</string>
+             </property>
+             <property name="text">
+              <string>Relação de pagamento</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Botao_Voltar">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+             </property>
+             <property name="text">
+              <string>Menu Principal</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="Layout_Right_2">
+         <item>
+          <widget class="QLabel" name="List_ALuno_Text">
+           <property name="styleSheet">
+            <string notr="true">font: 87 24pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+           </property>
+           <property name="text">
+            <string>Lista de Aluno</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1183</width>
+              <height>765</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <widget class="QTableWidget" name="tableWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>1251</width>
+               <height>621</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+alternate-background-color: rgb(216, 216, 0, 100);
+font: 20pt &quot;Arial&quot;;</string>
+             </property>
+             <property name="autoScroll">
+              <bool>true</bool>
+             </property>
+             <property name="dragEnabled">
+              <bool>false</bool>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SingleSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+             <property name="textElideMode">
+              <enum>Qt::ElideNone</enum>
+             </property>
+             <property name="verticalScrollMode">
+              <enum>QAbstractItemView::ScrollPerPixel</enum>
+             </property>
+             <property name="columnCount">
+              <number>2</number>
+             </property>
+             <attribute name="horizontalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderStretchLastSection">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <column/>
+             <column/>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <property name="minimumSize">
+      <size>
+       <width>212</width>
+       <height>50</height>
+      </size>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>1421</width>
+        <height>711</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="Layout_3">
+       <item>
+        <layout class="QVBoxLayout" name="Controles_3">
+         <item>
+          <widget class="QPushButton" name="Botao_Atualizar">
+           <property name="minimumSize">
+            <size>
+             <width>212</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(250, 250, 0);
+</string>
+           </property>
+           <property name="text">
+            <string>Atualizar Relação</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Botao_Cadastro_3">
+           <property name="minimumSize">
+            <size>
+             <width>212</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+           </property>
+           <property name="text">
+            <string>Cadastrar novo aluno</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Botao_Editar_2">
+           <property name="minimumSize">
+            <size>
+             <width>212</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+           </property>
+           <property name="text">
+            <string>Ver e editar cadastros</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Botao_Voltar_2">
+           <property name="minimumSize">
+            <size>
+             <width>212</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+           </property>
+           <property name="text">
+            <string>Menu Principal</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="Layout_Right_3">
+         <item>
+          <widget class="QLabel" name="List_Relacao_Text">
+           <property name="styleSheet">
+            <string notr="true">font: 87 24pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+           </property>
+           <property name="text">
+            <string>Relação de Pagamento</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListView" name="List_Relacao">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(229, 229, 229);</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>241</width>
+        <height>779</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="Controles_5">
+       <item>
+        <widget class="QPushButton" name="Botao_Editar_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+         </property>
+         <property name="text">
+          <string>Ver e editar cadastros</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Botao_Relacao_4">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);
+</string>
+         </property>
+         <property name="text">
+          <string>Relação de pagamento</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Botao_Voltar_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+         </property>
+         <property name="text">
+          <string>Menu Principal</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="Cadastro_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>0</y>
+        <width>1592</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 24pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Novo cadastro</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Nome_Label">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>90</y>
+        <width>94</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>20</pointsize>
+        <weight>10</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Nome:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Nome_Line">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>90</y>
+        <width>350</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>250</y>
+        <width>68</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>CPF:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CPF1_Line">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>250</y>
+        <width>150</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CPF2_Line">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>250</y>
+        <width>60</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>250</y>
+        <width>20</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(229, 229, 229);</string>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>330</y>
+        <width>149</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Endereço:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Endereco_Line">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>330</y>
+        <width>350</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>410</y>
+        <width>101</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>E-mail:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Email_Line">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>410</y>
+        <width>350</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>490</y>
+        <width>137</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Telefone:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Tel_Line">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>490</y>
+        <width>300</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>170</y>
+        <width>111</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Login:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Cod_Line">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>170</y>
+        <width>120</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>52</y>
+        <width>1191</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(229, 229, 229);</string>
+      </property>
+      <property name="text">
+       <string>l</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Botao_Cadastrar">
+      <property name="geometry">
+       <rect>
+        <x>1180</x>
+        <y>570</y>
+        <width>239</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Cadastrar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Botao_Limpar">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>570</y>
+        <width>239</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Limpar</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Aulas_Box">
+      <property name="geometry">
+       <rect>
+        <x>1260</x>
+        <y>160</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1 Dia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2 Dias</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3 Dias</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Todos os dias</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="Nome_Label_7">
+      <property name="geometry">
+       <rect>
+        <x>1060</x>
+        <y>160</y>
+        <width>181</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>20</pointsize>
+        <weight>10</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Nº de aulas:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Nome_Label_10">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>240</y>
+        <width>201</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>20</pointsize>
+        <weight>10</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Mensalidade:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Mensalidade">
+      <property name="geometry">
+       <rect>
+        <x>1240</x>
+        <y>240</y>
+        <width>151</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>20</pointsize>
+        <weight>10</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+      </property>
+      <property name="text">
+       <string> R$0000,00</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Senha_Line">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>170</y>
+        <width>120</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_41">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>170</y>
+        <width>111</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Senha:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Mensagem">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>337</y>
+        <width>321</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+color: rgb(170, 0, 0);
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_2</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>Cadastro_2</zorder>
+     <zorder>Nome_Label</zorder>
+     <zorder>Nome_Line</zorder>
+     <zorder>label_26</zorder>
+     <zorder>CPF1_Line</zorder>
+     <zorder>CPF2_Line</zorder>
+     <zorder>label_27</zorder>
+     <zorder>label_28</zorder>
+     <zorder>Endereco_Line</zorder>
+     <zorder>label_29</zorder>
+     <zorder>Email_Line</zorder>
+     <zorder>label_30</zorder>
+     <zorder>Tel_Line</zorder>
+     <zorder>label_31</zorder>
+     <zorder>Cod_Line</zorder>
+     <zorder>Botao_Cadastrar</zorder>
+     <zorder>Botao_Limpar</zorder>
+     <zorder>Aulas_Box</zorder>
+     <zorder>Nome_Label_7</zorder>
+     <zorder>Nome_Label_10</zorder>
+     <zorder>Mensalidade</zorder>
+     <zorder>Senha_Line</zorder>
+     <zorder>label_41</zorder>
+     <zorder>Mensagem</zorder>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>241</width>
+        <height>779</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="Controles_6">
+       <item>
+        <widget class="QPushButton" name="Botao_Remover">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(250, 250, 0);</string>
+         </property>
+         <property name="text">
+          <string>Remover aluno</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Botao_Voltar_4">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(250, 250, 0);</string>
+         </property>
+         <property name="text">
+          <string>Voltar par a lista</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Botao_Cadastro_4">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+         </property>
+         <property name="text">
+          <string>Cadastrar novo aluno</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Botao_Relacao_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);
+</string>
+         </property>
+         <property name="text">
+          <string>Relação de pagamento</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLineEdit" name="Cod_Line_2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>170</y>
+        <width>120</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Endereco_Line_2">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>330</y>
+        <width>350</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>170</y>
+        <width>111</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Login:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Cadastro_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>0</y>
+        <width>1592</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 24pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Alterar Cadastro</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>250</y>
+        <width>20</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(229, 229, 229);</string>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CPF2_Line_2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>250</y>
+        <width>60</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>60</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CPF1_Line_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>250</y>
+        <width>150</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Tel_Line_2">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>490</y>
+        <width>300</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>410</y>
+        <width>101</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>E-mail:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>250</y>
+        <width>68</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>CPF:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>330</y>
+        <width>149</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Endereço:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Mes_Line_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>52</y>
+        <width>1191</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(229, 229, 229);</string>
+      </property>
+      <property name="text">
+       <string>l</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Email_Line_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>410</y>
+        <width>350</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Nome_Label_6">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>90</y>
+        <width>94</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>20</pointsize>
+        <weight>10</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Nome:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>490</y>
+        <width>137</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Telefone:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Nome_Line_2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>90</y>
+        <width>350</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Botao_Alterar">
+      <property name="geometry">
+       <rect>
+        <x>1180</x>
+        <y>570</y>
+        <width>239</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Alterar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Botao_Desfazer">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>570</y>
+        <width>239</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Desfazer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Nome_Label_9">
+      <property name="geometry">
+       <rect>
+        <x>1060</x>
+        <y>160</y>
+        <width>181</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>20</pointsize>
+        <weight>10</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Nº de aulas:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Aulas_Box_2">
+      <property name="geometry">
+       <rect>
+        <x>1260</x>
+        <y>160</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1 Dia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2 Dias</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3 Dias</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Todos os dias</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="Nome_Label_12">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>240</y>
+        <width>201</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>20</pointsize>
+        <weight>10</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Mensalidade:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Mensalidade_2">
+      <property name="geometry">
+       <rect>
+        <x>1240</x>
+        <y>240</y>
+        <width>151</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>20</pointsize>
+        <weight>10</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_42">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>170</y>
+        <width>111</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Senha:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Senha_Line_2">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>170</y>
+        <width>120</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Mensagem_2">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>400</y>
+        <width>321</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+color: rgb(170, 0, 0);
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Botao_Edit">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>570</y>
+        <width>239</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 20pt &quot;Arial Black&quot;;
+background-color: rgb(216, 216, 0);</string>
+      </property>
+      <property name="text">
+       <string>Editar</string>
+      </property>
+     </widget>
+     <zorder>Mes_Line_2</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>Cod_Line_2</zorder>
+     <zorder>Endereco_Line_2</zorder>
+     <zorder>label_36</zorder>
+     <zorder>Cadastro_3</zorder>
+     <zorder>label_35</zorder>
+     <zorder>CPF2_Line_2</zorder>
+     <zorder>CPF1_Line_2</zorder>
+     <zorder>Tel_Line_2</zorder>
+     <zorder>label_37</zorder>
+     <zorder>label_33</zorder>
+     <zorder>label_40</zorder>
+     <zorder>Email_Line_2</zorder>
+     <zorder>Nome_Label_6</zorder>
+     <zorder>label_34</zorder>
+     <zorder>Nome_Line_2</zorder>
+     <zorder>Botao_Alterar</zorder>
+     <zorder>Botao_Desfazer</zorder>
+     <zorder>Nome_Label_9</zorder>
+     <zorder>Aulas_Box_2</zorder>
+     <zorder>Nome_Label_12</zorder>
+     <zorder>Mensalidade_2</zorder>
+     <zorder>label_42</zorder>
+     <zorder>Senha_Line_2</zorder>
+     <zorder>Mensagem_2</zorder>
+     <zorder>Botao_Edit</zorder>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>210</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>:/UI/C:/Users/nucle/OneDrive/Imagens/reação/Yuuka.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1440</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="F:/Área de Trabalho/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
